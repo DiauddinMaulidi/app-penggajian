@@ -4,11 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
     <title>LOGIN</title>
+    <style>
+        body {
+            background-image: url(assets/img/pc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -50px;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+        }
+    </style>
+
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4 ">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">LOGIN APLIKASI PENGGAJIAN</h3>
+                </div>
+                <div class="panel-body">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 

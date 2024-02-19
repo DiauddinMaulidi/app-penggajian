@@ -1,0 +1,27 @@
+html {
+    padding: 0;
+    margin: 0;
+    height: 1000px;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: aqua;
+}
+
+/*  */
+.tinggi-nav {
+    height: 60px;
+}
+.logo {
+    width: 50px;
+    border-radius: 50px;
+    background-color: aqua;
+}
+h3 {
+    font-family: "Bungee Spice", sans-serif;
+}
+.daftar {
+    background-color: aqua;
+    border-radius: 50px;
+    width: 80px;
+}
