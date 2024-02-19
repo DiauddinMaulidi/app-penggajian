@@ -5,10 +5,18 @@ html {
     font-family: "Poppins", sans-serif;
 }
 body {
-    background-color: aqua;
+    background-color: white;
 }
 
-/*  */
+/* navbar */
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transition: all .5s;
+}
 .tinggi-nav {
     height: 60px;
 }
@@ -17,11 +25,44 @@ body {
     border-radius: 50px;
     background-color: aqua;
 }
-h3 {
+.nav h3 {
     font-family: "Bungee Spice", sans-serif;
 }
 .daftar {
     background-color: aqua;
     border-radius: 50px;
     width: 80px;
+}
+.navbar a {
+    color: white;
+}
+
+/* section */
+.hero {
+    background-image: url(../img/pc.jpg);
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.content {
+    background-color: rgba(8, 255, 226, .7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+form div {
+    display: flex;
+    justify-content: center;
+}
+.wrapper .carou {
+    color: white;
+    height: 200px;
 }
