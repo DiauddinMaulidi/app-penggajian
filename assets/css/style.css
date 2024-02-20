@@ -61,13 +61,13 @@ body {
     justify-content: center;
     text-align: center;
 }
-form div {
-    display: flex;
-    justify-content: center;
-}
 .wrapper .carou {
     color: white;
     height: 200px;
+}
+form div {
+    display: flex;
+    justify-content: center;
 }
 
 /* fitur */
@@ -85,10 +85,10 @@ form div {
     margin-top: 50px;
     position: absolute;
     left: 0;
-    width: 99.5vw;
     display: flex;
     justify-content: space-around;
-    margin-left: 15px;
+    margin-right: 2px;
+    margin-left: 40px;
 }
 .icon-100 { 
     font-size: 100px; 
