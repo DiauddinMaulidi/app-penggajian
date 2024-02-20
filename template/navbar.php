@@ -14,10 +14,7 @@
                 <a class="nav-link" href="#fitur">Fitur</a>
             </li>
             <li class="nav-item m-3">
-                <a class="nav-link" href="#">Custumor Kami</a>
-            </li>
-            <li class="nav-item m-3">
-                <a class="nav-link" href="#">Kemitraan</a>
+                <a class="nav-link" href="#customor">Custumor Kami</a>
             </li>
             <li class="nav-item m-3">
                 <a class="nav-link daftar text-center text-white" href="#">Daftar</a>

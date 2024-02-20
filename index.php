@@ -132,6 +132,51 @@
 </section>
 <!-- close fitur -->
 
+<!-- Customor kami -->
+<section class="customor" id="customor">
+    <h3>OUR CUSTOMOR</h3>
+    <p><b>HRDGAJI</b> telah memudahkan pengelolaan administrasi karyawan di berbagai perusahaan dan UKM</p>
+    <div class="container mt-5 text-center">
+        
+        <div class="row">
+            <div class="col">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner thumb1">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="assets/img/meeting1.jpg" class="d-block  w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="assets/img/meeting2.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="assets/img/meeting3.jpg" class="d-block w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner thumb2">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="assets/img/meeting4.jpg" class="d-block  w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="assets/img/meeting5.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="assets/img/meeting6.jpg" class="d-block w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Clode Customor kami -->
+
+
 <?php
     require "template/footer.php";
 ?>
