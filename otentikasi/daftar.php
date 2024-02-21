@@ -14,9 +14,12 @@
                 alert('Maaf, email yang anda gunakan sudah ada');
             </script>";
         } else {
-            $row = mysqli_query($conn, "INSERT INTO tb_login VALUES ('', '$email', '$password', '$nama_lengkap') ");
+            mysqli_query($conn, "INSERT INTO tb_login VALUES ('', '$email', '$password', '$nama_lengkap') ");
             
-            header('location: index.php');
+            echo "<script>
+                alert('Anda berhasil mendaftar');
+                location.href = 'index.php';
+            </script>";
             exit;
         }
 

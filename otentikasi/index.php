@@ -1,4 +1,10 @@
 <?php
+    session_start();
+
+    if ( isset($_SESSION['loginBro']) ) {
+        header("location: ../index.php");
+        exit();
+    }
     
     require "../template/header.php";
     require "../template/navbar.php";

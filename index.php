@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    if ( !isset($_SESSION['loginBro']) ) {
+        header('location: otentikasi/index.php');
+        exit;
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,5 +16,6 @@
 </head>
 <body>
     <h1>Hallo</h1>
+    <a href="otentikasi/logout.php">keluar</a>
 </body>
 </html>
