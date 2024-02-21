@@ -45,9 +45,6 @@ body {
     display: flex;
     align-items: center;
 }
-.hero::after {
-    background: linear-gradient(0deg, rgba(1,1,1,1) );
-}
 .content {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(202, 229, 210) 8%, rgba(34,193,195,.7) 20%);
     position: absolute;
@@ -125,4 +122,23 @@ form div {
     text-align: center;
     padding-top: 10px;
     text-decoration: none;
+}
+
+/* daftar */
+.bg-daftar {
+    background-image: url(../img/pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-daftar .formulir {
+    width: 45%;
+}
+.bg-daftar .wrapper {
+    background-color: rgba(34,193,195,.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
 }

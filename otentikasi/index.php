@@ -47,11 +47,9 @@
                     </div>
                     <form action="proses-login.php" method="post">
                         <div class="mb-4">
-                            <label for="email" class="form-label"></label>
                             <input type="email" name="email" class="form-control rounded-4 w-75" id="email" aria-describedby="emailHelp" placeholder="email">
                         </div>
                         <div class="mb-5">
-                            <label for="password" class="form-label"></label>
                             <input type="password" name="password" class="form-control rounded-4 w-75" id="password" placeholder="password">
                         </div>
                         <button type="submit" class="btn btn-primary rounded-4 w-75" name="login">Masuk</button>
@@ -142,15 +140,11 @@
             <div class="col">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner thumb1">
-                        <div class="carousel-item active" data-bs-interval="4000">
-                            <img src="../assets/img/meeting1.jpg" class="d-block  w-100">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="../assets/img/meeting2.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="../assets/img/meeting3.jpg" class="d-block w-100">
-                        </div>
+                        <?php for ($i=1; $i <= 3; $i++) { ?>
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <img src="../assets/img/meeting<?= $i ?>.jpg" class="d-block  w-100">
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -158,15 +152,11 @@
             <div class="col">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner thumb2">
-                        <div class="carousel-item active" data-bs-interval="4000">
-                            <img src="../assets/img/meeting4.jpg" class="d-block  w-100">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="../assets/img/meeting5.jpg" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="4000">
-                            <img src="../assets/img/meeting6.jpg" class="d-block w-100">
-                        </div>
+                        <?php for ($i=4; $i <= 6; $i++) { ?>
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <img src="../assets/img/meeting<?= $i ?>.jpg" class="d-block  w-100">
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>

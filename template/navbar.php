@@ -17,7 +17,7 @@
                 <a class="nav-link" href="#customor">Custumor Kami</a>
             </li>
             <li class="nav-item m-3">
-                <a class="nav-link daftar text-center text-white" href="#">Daftar</a>
+                <a class="nav-link daftar text-center text-white" href="../otentikasi/daftar.php">Daftar</a>
             </li>
         </ul>
         </div>
