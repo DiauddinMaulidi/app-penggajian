@@ -6,8 +6,8 @@
         exit();
     }
     
-    require "../template/header.php";
-    require "../template/navbar.php";
+    require "template/header.php";
+    require "template/navbar.php";
 
 ?>
 
@@ -174,5 +174,5 @@
 
 
 <?php
-    require "../template/footer.php";
+    require "template/footer.php";
 ?>
