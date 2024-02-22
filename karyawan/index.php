@@ -47,14 +47,14 @@
                             <tbody>
                                 <?php 
                                     $plus = 1;
-                                    while ($hasil = mysqli_fetch_assoc($row)) { 
+                                    while ($hasil = mysqli_fetch_assoc($row)) {
                                 ?>
                                     <tr>
                                         <td><?= $plus++ ?></td>
                                         <td><?= $hasil["nama_karyawan"] ?></td>
-                                        <td><?= $hasil["ttl"] ?></td>
+                                        <td><?= waktuIndo($hasil["ttl"]) ?></td>
                                         <td><?= $hasil["alamat"] ?></td>
-                                        <td><?= $hasil["tanggal_masuk"] ?></td>
+                                        <td><?= waktuIndo($hasil["tanggal_masuk"]) ?></td>
                                         <td><?= $hasil["jabatan"] ?></td>
                                         <td><?= $hasil["jumlah_gaji"] ?></td>
                                         <td>
