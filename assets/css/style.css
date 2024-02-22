@@ -142,3 +142,10 @@ form div {
     right: 0;
     display: flex;
 }
+
+/* Data Karyawan */
+.container-fluid .card .tombolTambah {
+    background-color: rgb(91, 91, 232);
+    padding: 5px;
+    width: 180px;
+}

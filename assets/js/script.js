@@ -5,7 +5,7 @@ let navA = document.querySelectorAll('.navbar a');
 window.addEventListener('scroll', function () {
 
     if ( scrollY > 90 ) {
-        nav.style.background = 'white';
+        nav.style.backgroundColor = 'white';
         nav.style.boxShadow = '0 .1px 10px';
         navA.forEach(function(ulli) {
             ulli.style.color = 'aqua';
@@ -18,5 +18,3 @@ window.addEventListener('scroll', function () {
         })
     }
 })
-
-
