@@ -49,6 +49,15 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
+            <li class="nav-item <?= $theUri == 'admin' ? 'active' : null ?>">
+                <a class="nav-link" href="<?= $theUrl ?>admin/index.php">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <span>Data Admin</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"

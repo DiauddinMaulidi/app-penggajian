@@ -149,3 +149,7 @@ form div {
     padding: 5px;
     width: 170px;
 }
+.form input {
+    width: 450px;
+    margin-right: 20px;
+}
