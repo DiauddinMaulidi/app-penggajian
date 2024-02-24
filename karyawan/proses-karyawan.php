@@ -46,5 +46,16 @@
 
     }
 
+    if ( isset($_GET["aksi"]) == "hapus-karyawan" ) {
+        $id = $_GET["id"];
+
+        $hapusRows = mysqli_query($conn, "DELETE FROM tb_karyawan WHERE id_karyawan='$id' ");
+        echo "<script>
+            alert('Data berhasil hapus');
+            window.location = 'index.php';
+        </script>";
+
+    }
+
 
 ?>

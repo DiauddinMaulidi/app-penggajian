@@ -60,7 +60,7 @@
                                         <td>
                                             <a href="edit.php?id=<?= $hasil["id_karyawan"] ?>" class="text-decoration-none text-success" title="edit" > <i class="fa-solid fa-pen-to-square"></i> </a>
                                             |
-                                            <a href="<?= $theUrl ?>/hapus.php" class="text-danger" title="hapus" > <i class="fa-solid fa-trash"></i> </a>
+                                            <a href="proses-karyawan.php?id=<?= $hasil['id_karyawan'] ?>&aksi=hapus-karyawan" class="text-danger" title="hapus" > <i class="fa-solid fa-trash"></i> </a>
                                             
                                         </td>
                                     </tr>
