@@ -157,7 +157,7 @@
 
             <div class="col">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner thumb2">
+                    <div class="carousel-inner thumb1">
                         <?php for ($i=4; $i <= 6; $i++) { ?>
                             <div class="carousel-item active" data-bs-interval="4000">
                                 <img src="../assets/img/meeting<?= $i ?>.jpg" class="d-block  w-100">
