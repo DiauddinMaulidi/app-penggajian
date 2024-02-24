@@ -25,7 +25,7 @@
             <div class="card shadow mb-4">
                 <div class="card-body">
                     <div class="tombolTambah mb-4">
-                        <a href="<?= $theUrl ?>karyawan/tambah.php" class="text-decoration-none text-white me-5">Tambah Karyawan
+                        <a href="tambah.php" class="text-decoration-none text-white me-5">Tambah Karyawan
                             <i class="fa-solid fa-user-plus"></i>
                         </a>
                     </div>
@@ -58,7 +58,7 @@
                                         <td><?= $hasil["jabatan"] ?></td>
                                         <td><?= $hasil["jumlah_gaji"] ?></td>
                                         <td>
-                                            <a href="<?= $theUrl ?>/tambah.php" class="text-decoration-none text-success" title="edit" > <i class="fa-solid fa-pen-to-square"></i> </a>
+                                            <a href="edit.php?id=<?= $hasil["id_karyawan"] ?>" class="text-decoration-none text-success" title="edit" > <i class="fa-solid fa-pen-to-square"></i> </a>
                                             |
                                             <a href="<?= $theUrl ?>/hapus.php" class="text-danger" title="hapus" > <i class="fa-solid fa-trash"></i> </a>
                                             
