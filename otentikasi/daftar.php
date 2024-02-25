@@ -5,16 +5,21 @@
     if ( isset($_POST['register']) ) {
         $email = htmlspecialchars($_POST['email']);
         $password = password_hash(htmlspecialchars($_POST['password']), PASSWORD_DEFAULT);
-        $nama_lengkap = $_POST['fullName'];
+        $namaLengkap = trim(htmlspecialchars($_POST["namaLengkap"]));
+        $ttl = $_POST["ttl"];
+        $alamat = $_POST["alamat"];
+        $tanggal_masuk = $_POST["tanggal_masuk"];
+        $jabatan = trim(htmlspecialchars($_POST["jabatan"]));
+        $jumlah_gaji = $_POST["jumlah_gaji"];
 
-        $cekEmail = mysqli_query($conn, "SELECT * FROM tb_login WHERE email='$email' ");
+        $cekEmail = mysqli_query($conn, "SELECT * FROM tb_karyawan WHERE email='$email' ");
 
         if ( mysqli_num_rows($cekEmail) >= 1 ) {
             echo "<script>
                 alert('Maaf, email yang anda gunakan sudah ada');
             </script>";
         } else {
-            mysqli_query($conn, "INSERT INTO tb_login VALUES ('', '$email', '$password', '$nama_lengkap') ");
+            mysqli_query($conn, "INSERT INTO tb_karyawan VALUES ('', '$email', '$password', '$namaLengkap', '$ttl', '$alamat', '$tanggal_masuk', '$jabatan', '$jumlah_gaji') ");
             
             echo "<script>
                 alert('Anda berhasil mendaftar');
@@ -73,7 +78,27 @@
                                         <input type="password" class="form-control form-control-user" name="password" id="exampleInputEmail" placeholder="Password">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" name="fullName" id="exampleInputEmail" placeholder="Full Name">
+                                        <input type="text" class="form-control form-control-user" name="namaLengkap" id="exampleInputEmail" placeholder="namaLengkap">
+                                    </div>
+                                    <div class="m-3 d-block">
+                                        <label for="ttl" class="form-label">TTL</label>
+                                        <input type="date" class="form-control" name="ttl" id="ttl" placeholder="Tempat Tanggal Lahir...">
+                                    </div>
+                                    <div class="m-3 d-block">
+                                        <label for="exampleInputEmail1" class="form-label d-block">Alamat</label>
+                                        <textarea name="alamat" id="alamat" cols="50" rows="5"></textarea>
+                                    </div>
+                                    <div class="m-3 d-block">
+                                        <label for="tanggal_masuk" class="form-label">Tanggal Masuk</label>
+                                        <input type="date" class="form-control" name="tanggal_masuk" id="tanggal_masuk" placeholder="Tanggal Masuk...">
+                                    </div>
+                                    <div class="ml-3 d-block">
+                                        <label for="jabatan" class="form-label">Jabatan</label>
+                                        <input type="text" class="form-control" name="jabatan" id="jabatan" placeholder="Jabatan...">
+                                    </div>
+                                    <div class="m-3 d-block">
+                                        <label for="jumlah_gaji" class="form-label">Jumlah Gaji</label>
+                                        <input type="number" class="form-control" name="jumlah_gaji" id="jumlah_gaji" placeholder="Jumlah Gaji...">
                                     </div>
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-primary btn-user btn-block" name="register">Register</button>

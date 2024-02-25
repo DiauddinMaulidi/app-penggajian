@@ -22,6 +22,14 @@
                 <input type="text" class="form-control" name="namaLengkap" id="namaLengkap" placeholder="Nama Lengkap...">
             </div>
             <div class="m-3 d-block">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email...">
+            </div>
+            <div class="m-3 d-block">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password...">
+            </div>
+            <div class="m-3 d-block">
                 <label for="ttl" class="form-label">TTL</label>
                 <input type="date" class="form-control" name="ttl" id="ttl" placeholder="Tempat Tanggal Lahir...">
             </div>

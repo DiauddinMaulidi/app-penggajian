@@ -1,10 +1,8 @@
 <?php
 
         $email = $_SESSION['userLogin'];
-        $row = mysqli_query($conn, "SELECT * FROM tb_login WHERE email='$email' ");
-        // if ( mysqli_num_rows($row) ) {
-            $result = mysqli_fetch_assoc($row);
-        // }
+        $row = mysqli_query($conn, "SELECT * FROM tb_karyawan WHERE email='$email' ");
+        $result = mysqli_fetch_assoc($row);
 
         $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $hasil = explode("/", $uri_path);
@@ -24,7 +22,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3"><?= $result['nama_lengkap'] ?></div>
+                <div class="sidebar-brand-text mx-3"><?= $result['nama_karyawan'] ?></div>
             </div>
 
             <!-- Divider -->
@@ -44,15 +42,6 @@
                 <a class="nav-link" href="<?= $theUrl ?>karyawan/index.php">
                     <i class="fa-solid fa-users-gear"></i>
                     <span>Data Karyawan</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
-
-            <li class="nav-item <?= $theUri == 'admin' ? 'active' : null ?>">
-                <a class="nav-link" href="<?= $theUrl ?>admin/index.php">
-                    <i class="fa-solid fa-user-gear"></i>
-                    <span>Data Admin</span></a>
             </li>
 
             <!-- Divider -->

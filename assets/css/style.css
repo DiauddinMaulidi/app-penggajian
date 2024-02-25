@@ -103,10 +103,6 @@ form div {
     object-fit: cover;
     /* object-position: center 30%; */
 }
-/* .customor .container .thumb2 img {
-    height: 200px;
-    object-fit: cover;
-} */
 
 /* footer */
 .footer {
@@ -152,4 +148,11 @@ form div {
 .form input {
     width: 450px;
     margin-right: 20px;
+}
+
+/* data admin */
+.container-fluid .card .tambahHRD {
+    background-color: rgb(91, 91, 232);
+    padding: 5px;
+    width: 133px;
 }
